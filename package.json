@@ -1,0 +1,24 @@
+{
+  "name": "reddit-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shway250/reddit-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shway250/reddit-bot/issues"
+  },
+  "homepage": "https://github.com/shway250/reddit-bot#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "snoostorm": "0.0.5",
+    "snoowrap": "^1.14.1"
+  }
+}
