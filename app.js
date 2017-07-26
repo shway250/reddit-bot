@@ -15,8 +15,9 @@ const client = new Snoostorm(r);
 
 // Configure options for stream: subreddit & results per query
 const streamOpts = {
-    subreddit: 'all',
-    results: 25
+    subreddit: ['edmproduction', 'AskReddit'],
+    results: 25,
+    "pollTime": 5000
 };
   
 // Create a Snoostorm CommentStream with the specified options
@@ -24,10 +25,10 @@ const comments = client.CommentStream(streamOpts);
 
 // On comment, perform whatever logic you want to do
 comments.on('comment', (comment) => {
-    // console.log(comment);
+    console.log("**", comment.body);
 
-    if (comment.body === ':(') {
-    comment.reply(':)');
-}
+    // if (comment.body === ':(') {
+    // comment.reply(':)');
+// }
   
 });
